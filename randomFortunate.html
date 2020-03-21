@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Random info</title>
+</head>
+
+<body style="background-color:#ACFA58">
+
+<h1 style="background-color:#EBDEF0 ;" >About my self</h1>
+
+<h2 style="background-color:#B2AFA5;">Fortune generator</h2>
+
+<p style="background-color:#F3E194;">when you press the click button you get lots of information about me.</p>
+
+ <p id="arry"></p>
+    <button onclick="myfunction()">click here</button>
+    <script>
+        function myfunction(){
+            var que=["This is about my self","My name is Abida Ali","I am a student","My id is 171-15-8754","I want to be a good human being","Travelling is my hobby"];
+           var randomvalue=Math.floor(Math.random() * 6); 
+            document.getElementById('arry').innerHTML=que[randomvalue];
+        }
+    </script>
+
+</body>
+</html>
